@@ -41,8 +41,8 @@ public class Login
 		HttpPost httpPost = new HttpPost("https://login.rz.ruhr-uni-bochum.de/cgi-bin/laklogin");
 		List<NameValuePair> nvps = new ArrayList<NameValuePair>();
 		nvps.add(new BasicNameValuePair("code", "1&"));
-		nvps.add(new BasicNameValuePair("loginid", password)); // USERNAME
-		nvps.add(new BasicNameValuePair("password", username)); // PASSWORD
+		nvps.add(new BasicNameValuePair("loginid", username)); // USERNAME
+		nvps.add(new BasicNameValuePair("password", password)); // PASSWORD
 		nvps.add(new BasicNameValuePair("ipaddr", ""));
 		nvps.add(new BasicNameValuePair("action", "Login"));
 
